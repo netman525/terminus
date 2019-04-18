@@ -51,7 +51,7 @@ public class TestException {
         } catch (Exception e) {
             System.out.println("testEx2, catch exception");
             ret = false;
-            throw e;
+            return true;
         } finally {
             System.out.println("testEx2, finally; return value=" + ret);
 
